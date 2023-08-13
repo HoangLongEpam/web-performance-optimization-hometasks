@@ -1,10 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+/**
+ * Make changes here
+**/
 
 module.exports = {
     entry: path.resolve(__dirname, './index.js'),
     output: {
-        filename: 'bundle.js',
+        filename: "[name].mjs"
     },
     mode: 'development',
     module: {
@@ -13,14 +16,21 @@ module.exports = {
                 test: /\.html$/i,
                 loader: "html-loader",
             },
-            /**
-             * Make changes here
-            **/
-        ]
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                /**
+                 * Make changes here
+                **/
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./index.html"
-        })
+            template: "./index.html",
+        }),
+        /**
+         * Make changes here
+        **/
     ],
 };

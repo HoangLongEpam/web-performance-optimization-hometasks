@@ -1,23 +1,7 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const legacyConfig = require('./webpack.config.legacy');
+const modernConfig = require('./webpack.config.modern');
 
-module.exports = {
-    entry: path.resolve(__dirname, './index.js'),
-    output: {
-        filename: 'bundle.js',
-    },
-    mode: 'development',
-    module: {
-        rules: [
-            {
-                test: /\.html$/i,
-                loader: "html-loader",
-            },
-        ]
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./index.html"
-        })
-    ],
-};
+module.exports = [
+    legacyConfig,
+    modernConfig,
+];

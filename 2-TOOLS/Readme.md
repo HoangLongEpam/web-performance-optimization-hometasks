@@ -100,7 +100,7 @@ The *Self Time* column shows you how much time was spent directly in each activi
 
 37. Time to see whether using production mode and reducing JavaScript activity will speed up the page load. Start with production mode:
 
-   - Open `webpack.config.js`.
+   - Open `webpack.config.modern.js`.
    - Change `"mode":"development"` to `"mode":"production"`.
    - Re-start build or wait for re-build
    - Audit the page (the score is increased again).
