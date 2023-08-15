@@ -1,0 +1,62 @@
+# Critical css hometask
+
+## Task description
+Main goal of the task is to try the critical css approach and to use fonts in an optimized way.
+
+The task consists of next steps:
+1. Determine at what resolution the maximum amount of content is placed at the top of the page (take into account iphone
+5, ipad and desktop resolutions)
+2. Connect [html-critical-webpack-plugin](https://www.npmjs.com/package/html-critical-webpack-plugin) to separate the critical css and include it inline according to resolution which
+was determined in previous step
+3. Import both roboto and raleway fonts properly using the most optimal font format (woff, woff2)
+4. Use Roboto for all paragraph texts and Raleway for all headers
+5. Ensure that fonts are properly preloaded with crossorgin property set properly
+6. Use proper font-face declaration with the appropriate unicode range, setting a correct font stack starting with local()
+7. Make sure that fonts are displayed with the FOUT strategy
+
+
+## Evaluation criteria
+For every day of lateness there is a penalty in 5%.
+Minimal passing grade is 60%. In case task cannot be graded 60% - task should be sent for updates.
+
+<table>
+  <tbody>
+    <tr>
+      <th>Grade</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Send back for updates</td>
+      <td>If any of the following:
+        <ul>
+          <li>Task is not working</li>
+          <li>Implementation has low quality</li>
+          <li>Some acceptance criteria are not met</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>60−69</td>
+      <td>All of above is done:
+        <ul>
+          <li>Resolution with maximum content amount determined correctly.</li>
+          <li>[html-critical-webpack-plugin](https://www.npmjs.com/package/html-critical-webpack-plugin) connected correctly, there is only 1 .css file in dist and critical inline styles connected in html</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>70−89</td>
+      <td>All from previous points and:
+        <ul>
+          <li>Used Roboto font for all paragraphs and Raleway for all headers</li>
+          <li>Fonts preloaded properly with crossorgin property</li>
+          <li>Used proper font-face declaration with the appropriate unicode range, setting a correct font stack starting with local()</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>90−100</td>
+      <td>All from previous points and fonts are displayed with the FOUT strategy.</td>
+    </tr>
+  </tbody>
+</table>
