@@ -39,7 +39,7 @@ Minimal passing grade is 60%. In case task cannot be graded 60% - task should be
       <td>60−100</td>
       <td>All of above is done:
         <ul>
-          <li>Service worker registrated in 'index.js' according to comments</li>
+          <li>Service worker registered in 'index.js' according to comments</li>
           <li>Service worker implemented in 'worker.js' according to comments</li>
           <li>Second button works and the page does not freeze while the SW is working</li>
         </ul>

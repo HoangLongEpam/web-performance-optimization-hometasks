@@ -118,8 +118,35 @@ The *Self Time* column shows you how much time was spent directly in each activi
 - Make one change at a time, and audit the page after each change in order to see how that isolated change affects performance.
 
 ## Evaluation criteria
-For every day of lateness there is a penalty in 0.5 point. Maximum 10 points. 
+For every day of lateness, there is a penalty of 5%.
+Minimal passing grade is 60%. In case task cannot be graded 60% click Send back for updates  button, mentioning what shoud be corrected.
 
-1. Create a step by step report with key steps and attach it with modified project **[5 points]**
-1. Your final performance mark more than 80/100 **[2 points]**
-1. Your final performance mark more than 90/100 **[3 points]**
+<table>
+  <tbody>
+    <tr>
+      <th>Grade</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Send back for updates</td>
+      <td>If any of the following:
+        <ul>
+          <li>Report was not attached</li>
+          <li>Report contains mistakes</li>
+          <li>Report is not detailed enough</li>
+          <li>Final performance mark is less than 80</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>60−89</td>
+      <td>Report looks good and final performance mark is between 80 and 90
+      </td>
+    </tr>
+    <tr>
+      <td>90-100</td>
+      <td>Report looks good and final performance mark is 90 or more
+      </td>
+    </tr>
+  </tbody>
+</table>
