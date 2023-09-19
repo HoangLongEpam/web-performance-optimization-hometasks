@@ -1,7 +1,10 @@
+# Code Splitting Hometask
+
 ## How to start project?
 
-1. npm install
-2. npm run build (dist folder contains bundle files)
+1. Go to `/web-performance-optimization-hometasks/6-CODE-SPLITTING`.
+2. Run `npm i`
+3. Run `npm run build`
 
 ## Task description
 This project contains only js files. There are two files `script1.js` and `script2.js`. Both of them imports small
@@ -10,7 +13,6 @@ small functionality.
 
 First to investigate root-cause you need to integrate Webpack Bundle Analyzer into build process. After
 that you will see that in both bundles almost all size takes lodash.
-
 
 What we see should lead us to 2 thoughts:
 

@@ -1,4 +1,12 @@
-# Critical css hometask
+# Critical CSS Hometask
+
+## How to start project?
+
+1. Go to `/web-performance-optimization-hometasks/5-FONTS-AND-CSS`.
+2. Run `npm i`
+3. Run `npm run build` to build project
+4. Run `npm run start` to start project locally
+5. Check if everything is OK with your local setup by opening [localhost:8080](http://localhost:8080)
 
 ## Task description
 Main goal of the task is to try the critical css approach and to use fonts in an optimized way.

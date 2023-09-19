@@ -4,6 +4,6 @@ const fs = require('fs');
 
 app.use(express.static('build'));
 
-const listener = app.listen(process.env.PORT || 1234, function () {
+const listener = app.listen(8080, function () {
   console.log(`Listening on port ${listener.address().port}`);
 });

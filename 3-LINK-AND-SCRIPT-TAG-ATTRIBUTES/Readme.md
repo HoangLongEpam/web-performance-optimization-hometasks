@@ -1,4 +1,13 @@
-# Identify target browser hometask
+# Identify Target Browser Hometask
+
+## How to start project?
+
+1. Go to `/web-performance-optimization-hometasks/3-LINK-AND-SCRIPT-TAG-ATTRIBUTES`.
+2. Run `npm i`
+3. Run `npm run build` to build project
+4. Run `npm run start` to start project locally
+5. Run `npm run watch` to start project locally and watch for changes
+6. Check if everything is OK with your local setup by opening [localhost:8080](http://localhost:8080)
 
 ## Task description
 The main goal of the task is to make changes in 2 webpack projects and compare the sizes of the resulting js files. 

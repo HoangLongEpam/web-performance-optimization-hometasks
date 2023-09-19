@@ -1,4 +1,11 @@
-# Images performance hometask
+# Images Performance Hometask
+
+## How to start project?
+
+1. Go to `/web-performance-optimization-hometasks/4-IMAGES`.
+2. Run `npm i`
+3. Run `npm run start` to start server locally
+4. Open `./client/index.html`
 
 ## Task description
 Main goal of the task is to implement an approaches with responsive images and lazy loading images.

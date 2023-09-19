@@ -1,13 +1,13 @@
 {
-  "name": "code-spliting-hw",
+  "name": "code-spliting-hometask",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "Voinov A.V.",
+  "license": "ISC",
   "scripts": {
     "build": "webpack"
   },
-  "author": "Voinov A.V.",
-  "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21",
     "webpack": "^5.88.2"

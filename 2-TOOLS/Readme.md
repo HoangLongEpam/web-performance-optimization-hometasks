@@ -1,19 +1,19 @@
-# Performance tools home task
+# Performance Tools Hometask
 
 The main goal of this task is to get some experience with Lighthouse and Chrome Dev Tools.
 
-## Prerequisites
+## How to start project?
 
-First off, you need run example app locally, so you will have ability to play with codebase and optimize a bit one small app.
+Firstly, you need run example app locally, so you will have ability to play with codebase and optimize a bit one small app.
 
 1. Go to `/web-performance-optimization-hometasks/2-TOOLS`.
 2. Run `npm i`
 3. Run `npm start`
-4. Check if everything is OK with your local setup by opening [localhost:1234](http://localhost:1234), you are supposed you are supposed to see an app with food cards.
+4. Check if everything is OK with your local setup by opening [localhost:8080](http://localhost:8080), you are supposed you are supposed to see an app with food cards.
 
 ## Task Steps
 
-1. Open [localhost:1234](http://localhost:1234).
+1. Open [localhost:8080](http://localhost:8080).
 2. Press `Command+Option+J` (Mac) or `Control+Shift+J` (Windows, Linux, Chrome OS). Chrome DevTools opens up alongside the demo.
 
 > Firstly, we need to establish a baseline - the baseline is a record of how the site performed before you made any performance improvements.

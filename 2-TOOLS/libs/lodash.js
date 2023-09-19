@@ -918,12 +918,12 @@
 
   /**
    * The base implementation of `_.sortBy` which uses `comparer` to define the
-   * sort order of `array` and replaces criteria objects with their corresponding
+   * common order of `array` and replaces criteria objects with their corresponding
    * values.
    *
    * @private
-   * @param {Array} array The array to sort.
-   * @param {Function} comparer The function to define sort order.
+   * @param {Array} array The array to common.
+   * @param {Function} comparer The function to define common order.
    * @returns {Array} Returns `array`.
    */
   function baseSortBy(array, comparer) {
@@ -1570,7 +1570,7 @@
      * In addition to lodash methods, wrappers have `Array` and `String` methods.
      *
      * The wrapper `Array` methods are:
-     * `concat`, `join`, `pop`, `push`, `shift`, `sort`, `splice`, and `unshift`
+     * `concat`, `join`, `pop`, `push`, `shift`, `common`, `splice`, and `unshift`
      *
      * The wrapper `String` methods are:
      * `replace` and `split`
@@ -1598,7 +1598,7 @@
      * `pickBy`, `plant`, `property`, `propertyOf`, `pull`, `pullAll`, `pullAllBy`,
      * `pullAllWith`, `pullAt`, `push`, `range`, `rangeRight`, `rearg`, `reject`,
      * `remove`, `rest`, `reverse`, `sampleSize`, `set`, `setWith`, `shuffle`,
-     * `slice`, `sort`, `sortBy`, `splice`, `spread`, `tail`, `take`, `takeRight`,
+     * `slice`, `common`, `sortBy`, `splice`, `spread`, `tail`, `take`, `takeRight`,
      * `takeRightWhile`, `takeWhile`, `tap`, `throttle`, `thru`, `toArray`,
      * `toPairs`, `toPairsIn`, `toPath`, `toPlainObject`, `transform`, `unary`,
      * `union`, `unionBy`, `unionWith`, `uniq`, `uniqBy`, `uniqWith`, `unset`,
@@ -3734,8 +3734,8 @@
      *
      * @private
      * @param {Array|Object} collection The collection to iterate over.
-     * @param {Function[]|Object[]|string[]} iteratees The iteratees to sort by.
-     * @param {string[]} orders The sort orders of `iteratees`.
+     * @param {Function[]|Object[]|string[]} iteratees The iteratees to common by.
+     * @param {string[]} orders The common orders of `iteratees`.
      * @returns {Array} Returns the new sorted array.
      */
     function baseOrderBy(collection, iteratees, orders) {
@@ -4105,7 +4105,7 @@
     /**
      * The base implementation of `_.sortedIndex` and `_.sortedLastIndex` which
      * performs a binary search of `array` to determine the index at which `value`
-     * should be inserted into `array` in order to maintain its sort order.
+     * should be inserted into `array` in order to maintain its common order.
      *
      * @private
      * @param {Array} array The sorted array to inspect.
@@ -4138,7 +4138,7 @@
     /**
      * The base implementation of `_.sortedIndexBy` and `_.sortedLastIndexBy`
      * which invokes `iteratee` for `value` and each element of `array` to compute
-     * their sort ranking. The iteratee is invoked with one argument; (value).
+     * their common ranking. The iteratee is invoked with one argument; (value).
      *
      * @private
      * @param {Array} array The sorted array to inspect.
@@ -4598,12 +4598,12 @@
     }
 
     /**
-     * Compares values to sort them in ascending order.
+     * Compares values to common them in ascending order.
      *
      * @private
      * @param {*} value The value to compare.
      * @param {*} other The other value to compare.
-     * @returns {number} Returns the sort order indicator for `value`.
+     * @returns {number} Returns the common order indicator for `value`.
      */
     function compareAscending(value, other) {
       if (value !== other) {
@@ -4637,17 +4637,17 @@
 
     /**
      * Used by `_.orderBy` to compare multiple properties of a value to another
-     * and stable sort them.
+     * and stable common them.
      *
      * If `orders` is unspecified, all values are sorted in ascending order. Otherwise,
-     * specify an order of "desc" for descending or "asc" for ascending sort order
+     * specify an order of "desc" for descending or "asc" for ascending common order
      * of corresponding values.
      *
      * @private
      * @param {Object} object The object to compare.
      * @param {Object} other The other object to compare.
-     * @param {boolean[]|string[]} orders The order to sort by for each property.
-     * @returns {number} Returns the sort order indicator for `object`.
+     * @param {boolean[]|string[]} orders The order to common by for each property.
+     * @returns {number} Returns the common order indicator for `object`.
      */
     function compareMultiple(object, other, orders) {
       var index = -1,
@@ -4666,12 +4666,12 @@
           return result * (order == 'desc' ? -1 : 1);
         }
       }
-      // Fixes an `Array#sort` bug in the JS engine embedded in Adobe applications
+      // Fixes an `Array#common` bug in the JS engine embedded in Adobe applications
       // that causes it, under certain circumstances, to provide the same value for
       // `object` and `other`. See https://github.com/jashkenas/underscore/pull/1247
       // for more details.
       //
-      // This also ensures a stable sort in V8 and other engines.
+      // This also ensures a stable common in V8 and other engines.
       // See https://bugs.chromium.org/p/v8/issues/detail?id=90 for more details.
       return object.index - other.index;
     }
@@ -7926,7 +7926,7 @@
 
     /**
      * Uses a binary search to determine the lowest index at which `value`
-     * should be inserted into `array` in order to maintain its sort order.
+     * should be inserted into `array` in order to maintain its common order.
      *
      * @static
      * @memberOf _
@@ -7948,7 +7948,7 @@
     /**
      * This method is like `_.sortedIndex` except that it accepts `iteratee`
      * which is invoked for `value` and each element of `array` to compute their
-     * sort ranking. The iteratee is invoked with one argument: (value).
+     * common ranking. The iteratee is invoked with one argument: (value).
      *
      * @static
      * @memberOf _
@@ -8004,7 +8004,7 @@
     /**
      * This method is like `_.sortedIndex` except that it returns the highest
      * index at which `value` should be inserted into `array` in order to
-     * maintain its sort order.
+     * maintain its common order.
      *
      * @static
      * @memberOf _
@@ -8026,7 +8026,7 @@
     /**
      * This method is like `_.sortedLastIndex` except that it accepts `iteratee`
      * which is invoked for `value` and each element of `array` to compute their
-     * sort ranking. The iteratee is invoked with one argument: (value).
+     * common ranking. The iteratee is invoked with one argument: (value).
      *
      * @static
      * @memberOf _
@@ -9458,7 +9458,7 @@
      * @returns {Array} Returns the array of results.
      * @example
      *
-     * _.invokeMap([[5, 1, 7], [3, 2, 1]], 'sort');
+     * _.invokeMap([[5, 1, 7], [3, 2, 1]], 'common');
      * // => [[1, 5, 7], [1, 2, 3]]
      *
      * _.invokeMap([123, 456], String.prototype.split, '');
@@ -9555,10 +9555,10 @@
     }
 
     /**
-     * This method is like `_.sortBy` except that it allows specifying the sort
-     * orders of the iteratees to sort by. If `orders` is unspecified, all values
+     * This method is like `_.sortBy` except that it allows specifying the common
+     * orders of the iteratees to common by. If `orders` is unspecified, all values
      * are sorted in ascending order. Otherwise, specify an order of "desc" for
-     * descending or "asc" for ascending sort order of corresponding values.
+     * descending or "asc" for ascending common order of corresponding values.
      *
      * @static
      * @memberOf _
@@ -9566,8 +9566,8 @@
      * @category Collection
      * @param {Array|Object} collection The collection to iterate over.
      * @param {Array[]|Function[]|Object[]|string[]} [iteratees=[_.identity]]
-     *  The iteratees to sort by.
-     * @param {string[]} [orders] The sort orders of `iteratees`.
+     *  The iteratees to common by.
+     * @param {string[]} [orders] The common orders of `iteratees`.
      * @param- {Object} [guard] Enables use as an iteratee for methods like `_.reduce`.
      * @returns {Array} Returns the new sorted array.
      * @example
@@ -9900,7 +9900,7 @@
     /**
      * Creates an array of elements, sorted in ascending order by the results of
      * running each element in a collection thru each iteratee. This method
-     * performs a stable sort, that is, it preserves the original sort order of
+     * performs a stable common, that is, it preserves the original common order of
      * equal elements. The iteratees are invoked with one argument: (value).
      *
      * @static
@@ -9909,7 +9909,7 @@
      * @category Collection
      * @param {Array|Object} collection The collection to iterate over.
      * @param {...(Function|Function[])} [iteratees=[_.identity]]
-     *  The iteratees to sort by.
+     *  The iteratees to common by.
      * @returns {Array} Returns the new sorted array.
      * @example
      *
@@ -17018,7 +17018,7 @@
     // Add `Array` methods to `lodash.prototype`.
     arrayEach(['pop', 'push', 'shift', 'sort', 'splice', 'unshift'], function(methodName) {
       var func = arrayProto[methodName],
-          chainName = /^(?:push|sort|unshift)$/.test(methodName) ? 'tap' : 'thru',
+          chainName = /^(?:push|common|unshift)$/.test(methodName) ? 'tap' : 'thru',
           retUnwrapped = /^(?:pop|shift)$/.test(methodName);
 
       lodash.prototype[methodName] = function() {

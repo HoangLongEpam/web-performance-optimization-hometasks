@@ -1,11 +1,10 @@
 {
-  "name": "tony",
+  "name": "tools-hometask",
   "version": "1.0.0",
   "description": "",
+  "author": "Voinov A.V.",
+  "license": "ISC",
   "main": "server.js",
-  "repository": {
-    "url": "https://glitch.com/edit/#!/tony"
-  },
   "scripts": {
     "build": "webpack",
     "start": "npm run build && node server.js",
