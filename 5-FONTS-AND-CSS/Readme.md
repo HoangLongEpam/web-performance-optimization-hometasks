@@ -12,15 +12,13 @@
 Main goal of the task is to try the critical css approach and to use fonts in an optimized way.
 
 The task consists of next steps:
-1. Determine at what resolution the maximum amount of content is placed at the top of the page (take into account iphone
-5, ipad and desktop resolutions)
-2. Connect [html-critical-webpack-plugin](https://www.npmjs.com/package/html-critical-webpack-plugin) to separate the critical css and include it inline according to resolution which
-was determined in previous step
-3. Import both roboto and raleway fonts properly using the most optimal font format (woff, woff2)
-4. Use Roboto for all paragraph texts and Raleway for all headers
-5. Ensure that fonts are properly preloaded with crossorgin property set properly
-6. Use proper font-face declaration with the appropriate unicode range, setting a correct font stack starting with local()
-7. Make sure that fonts are displayed with the FOUT strategy
+1. Connect [html-critical-webpack-plugin](https://www.npmjs.com/package/html-critical-webpack-plugin) to separate the
+critical css and include it inline. Configure plugin according to 3 dimensions (iphone 5, ipad and desktop).
+2. Import both roboto and raleway fonts properly using the most optimal font format (woff, woff2)
+3. Use Roboto for all paragraph texts and Raleway for all headers
+4. Ensure that fonts are properly preloaded with crossorgin property set properly
+5. Use proper font-face declaration with the appropriate unicode range, setting a correct font stack starting with local()
+6. Make sure that fonts are displayed with the FOUT strategy
 
 
 ## Evaluation criteria
@@ -47,8 +45,7 @@ Minimal passing grade is 60%. In case task cannot be graded 60% - task should be
       <td>60−69</td>
       <td>All of above is done:
         <ul>
-          <li>Resolution with maximum content amount determined correctly.</li>
-          <li>[html-critical-webpack-plugin](https://www.npmjs.com/package/html-critical-webpack-plugin) connected correctly, there is only 1 .css file in dist and critical inline styles connected in html</li>
+          <li>[html-critical-webpack-plugin](https://www.npmjs.com/package/html-critical-webpack-plugin) connected according to task requirements, there is only 1 .css file in dist and critical inline styles connected in html</li>
         </ul>
       </td>
     </tr>
