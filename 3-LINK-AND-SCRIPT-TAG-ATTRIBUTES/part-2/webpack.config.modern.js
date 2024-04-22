@@ -9,7 +9,7 @@ module.exports = {
     output: {
         filename: "[name].mjs"
     },
-    mode: 'development',
+    mode: 'production',
     module: {
         rules: [
             {
