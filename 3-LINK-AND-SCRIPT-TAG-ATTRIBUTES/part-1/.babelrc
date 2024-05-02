@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "last 2 versions, > 5%, not dead",
+        "debug": true,
+        "useBuiltIns": "usage",
+        "corejs": "3.22"
+      }
+    ]
+  ]
+}
