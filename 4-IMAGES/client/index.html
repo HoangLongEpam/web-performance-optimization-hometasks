@@ -1,25 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Hometask 4</title>
     <style>
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
     </style>
-</head>
-<body>
-    <img src="http://localhost:8000/image1" alt=''/>
-    <img src="http://localhost:8000/image2" alt=''/>
-    <img src="http://localhost:8000/image3" alt=''/>
-    <img src="http://localhost:8000/image4" alt=''/>
-    <img src="http://localhost:8000/image5" alt=''/>
-    <img src="http://localhost:8000/image6" alt=''/>
-    <img src="http://localhost:8000/image7" alt=''/>
-    <img src="http://localhost:8000/image8" alt=''/>
-    <img src="http://localhost:8000/image9" alt=''/>
-    <img src="http://localhost:8000/image10" alt=''/>
-</body>
+  </head>
+
+  <body>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image1?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image1?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image1?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image1?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image1?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image1?width=320"
+        media="(max-width: 320px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="http://localhost:8000/image1?width=480"
+        media="(min-width: 321px) and (max-width: 480px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="http://localhost:8000/image1?width=768"
+        media="(min-width: 481px) and (max-width: 768px)"
+        type="image/jpeg"
+      />
+      <source
+        srcset="http://localhost:8000/image1?width=1024"
+        media="(min-width: 769px) and (max-width: 1024px)"
+        type="image/jpeg"
+      />
+      <img
+        srcset="http://localhost:8000/image1?width=1920"
+        alt="Description of the image"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image2?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image2?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image2?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image2?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image2?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image2?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://local    host:8000/image2?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image2?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image2?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image2?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image2"
+        alt="Description of the image"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image3?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image3?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image3?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image3"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image4?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image4?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image4?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image4"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image5?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image5?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image5?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image5"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image6?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image6?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image6?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image6"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image7?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image7?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image7?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image7"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image8?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image8?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image8?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image8"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image9?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image9?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image9?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        srcset="http://localhost:8000/image9"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="http://localhost:8000/image10?width=320&format=webp"
+        media="(max-width: 320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=480&format=webp"
+        media="(max-width: 480px) and (min-width: 321px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=768&format=webp"
+        media="(max-width: 768px) and (min-width: 481px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=1024&format=webp"
+        media="(max-width: 1024px) and (min-width: 769px)"
+        type="image/webp"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=1920&format=webp"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+        type="image/webp"
+      />
+
+      <source
+        srcset="http://localhost:8000/image10?width=320"
+        media="(max-width: 320px)"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=480"
+        media="(max-width: 480px) and (min-width: 321px)"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=768"
+        media="(max-width: 768px) and (min-width: 481px)"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=1024"
+        media="(max-width: 1024px) and (min-width: 769px)"
+      />
+      <source
+        srcset="http://localhost:8000/image10?width=1920"
+        media="(max-width: 1920px) and (min-width: 1025px)"
+      />
+      <img
+        data-src="http://localhost:8000/image10"
+        alt="Description of the image"
+        loading="lazy"
+        class="lazy"
+      />
+    </picture>
+  </body>
 </html>
