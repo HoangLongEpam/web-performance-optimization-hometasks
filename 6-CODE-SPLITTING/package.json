@@ -6,11 +6,13 @@
   "author": "Voinov A.V.",
   "license": "ISC",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "check": "webpack-bunble-analyzer bundle/**/stats.json"
   },
   "dependencies": {
     "lodash": "^4.17.21",
-    "webpack": "^5.88.2"
+    "webpack": "^5.88.2",
+    "webpack-bundle-analyzer": "^4.10.2"
   },
   "devDependencies": {
     "webpack-cli": "^5.1.4"
